@@ -30,7 +30,7 @@ int main() {
     Environment env;
 
     env.removeSymbol("miSimbolo");
-   
+
     if (env.symbolExists("otroSimbolo")) {
         std::cout << "El símbolo 'otroSimbolo' existe en la tabla." << std::endl;
     } else {
