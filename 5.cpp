@@ -22,3 +22,12 @@ public:
         symbolTable[symbol] = value;
     }
 
+    Variant getSymbolValue(const std::string& symbol) {
+        auto it = symbolTable.find(symbol);
+        if (it != symbolTable.end()) {
+            return it->second;
+        } else {
+            return Variant(); // Devuelve un objeto Variant predeterminado
+        }
+    }
+};
