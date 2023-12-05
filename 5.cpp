@@ -13,3 +13,12 @@ struct Variant {
     Variant(const char* value) : intValue(0), stringValue(value) {}
 };
 
+class Environment {
+private:
+    std::map<std::string, Variant> symbolTable;
+
+public:
+    void addSymbol(const std::string& symbol, const Variant& value) {
+        symbolTable[symbol] = value;
+    }
+
