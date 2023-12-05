@@ -15,13 +15,19 @@ public:
         if (symbolTable.find(symbol) != symbolTable.end()) {
             return symbolTable[symbol];
         } else {
-           
+
             std::cerr << "Error: El símbolo '" << symbol << "' no está definido en el entorno." << std::endl;
-            return 0; // O el valor por defecto que desees
+            return 0;
         }
     }
 
 };
+int main() {
+    Environment env;
+    
+    env.addSymbol("x", 10);
+    env.addSymbol("y", 20);
+
 
 
 
