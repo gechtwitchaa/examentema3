@@ -20,7 +20,7 @@ public:
             return 0;
         }
     }
-    
+
     bool insert(const std::string& symbol, int value) {
         auto it = symbolTable.find(symbol);
         if (it == symbolTable.end()) {
@@ -33,4 +33,9 @@ public:
     }
 
 };
+int main() {
+    Environment env;
 
+    env.insert("x", 10);
+    env.insert("y", 20);
+ 
