@@ -27,7 +27,7 @@ int main() {
 
     env.addSymbol("x", 10);
     env.addSymbol("y", 20);
-    
+
     std::unique_ptr<int> valueX = env.lookup("x");
     if (valueX) {
         std::cout << "El valor de 'x' es: " << *valueX << std::endl;

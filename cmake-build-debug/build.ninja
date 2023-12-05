@@ -139,6 +139,39 @@ build 3.exe: CXX_EXECUTABLE_LINKER__3_Debug CMakeFiles/3.dir/3.cpp.obj
   TARGET_IMPLIB = lib3.dll.a
   TARGET_PDB = 3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 4
+
+
+#############################################
+# Order-only phony target for 4
+
+build cmake_object_order_depends_target_4: phony || CMakeFiles/4.dir
+
+build CMakeFiles/4.dir/4.cpp.obj: CXX_COMPILER__4_unscanned_Debug C$:/Users/alber_wzgn3ys/Documents/GitHub/examentema3/4.cpp || cmake_object_order_depends_target_4
+  DEP_FILE = CMakeFiles\4.dir\4.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\4.dir
+  OBJECT_FILE_DIR = CMakeFiles\4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 4
+
+
+#############################################
+# Link the executable 4.exe
+
+build 4.exe: CXX_EXECUTABLE_LINKER__4_Debug CMakeFiles/4.dir/4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 4.exe
+  TARGET_IMPLIB = lib4.dll.a
+  TARGET_PDB = 4.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -169,6 +202,8 @@ build 2: phony 2.exe
 
 build 3: phony 3.exe
 
+build 4: phony 4.exe
+
 build examentema3: phony examentema3.exe
 
 # =============================================================================
@@ -179,7 +214,7 @@ build examentema3: phony examentema3.exe
 #############################################
 # Folder: C:/Users/alber_wzgn3ys/Documents/GitHub/examentema3/cmake-build-debug
 
-build all: phony examentema3.exe 2.exe 3.exe
+build all: phony examentema3.exe 2.exe 3.exe 4.exe
 
 # =============================================================================
 # Built-in targets
