@@ -24,9 +24,14 @@ public:
 };
 int main() {
     Environment env;
-    
+
     env.addSymbol("x", 10);
     env.addSymbol("y", 20);
+
+    std::cout << "El valor de 'x' es: " << env.getSymbolValue("x") << std::endl;
+    std::cout << "El valor de 'y' es: " << env.getSymbolValue("y") << std::endl;
+
+ 
 
 
 
