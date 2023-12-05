@@ -30,7 +30,7 @@ int main() {
 
     std::cout << "El valor de 'x' es: " << env.getSymbolValue("x") << std::endl;
     std::cout << "El valor de 'y' es: " << env.getSymbolValue("y") << std::endl;
-    
+
     std::cout << "El valor de 'z' es: " << env.getSymbolValue("z") << std::endl;
 
     return 0;
