@@ -20,3 +20,19 @@ struct Variant {
 
 };
 
+class Environment {
+    std::unordered_map<std::string, Variant> symbols;
+
+public:
+    void addSymbol(const std::string& name, const Variant& value) {
+        symbols[name] = value;
+    }
+
+    Variant getSymbol(const std::string& name) const {
+        auto it = symbols.find(name);
+        if (it != symbols.end()) {
+            return it->second;
+        }
+        return Variant("No existe esa habilidad");
+    }
+
