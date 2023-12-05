@@ -36,8 +36,12 @@ public:
 
 int main() {
     Environment abilities;
-    
+
     abilities.addSymbol("Ataque Furtivo", Variant("Realiza un ataque sigiloso"));
     abilities.addSymbol("Cura", Variant("Restaura puntos de vida"));
     abilities.addSymbol("Daño Mágico", Variant(30));
+
+    std::cout << "Ataque Furtivo: " << abilities.getSymbol("Ataque Furtivo").stringValue << std::endl;
+    std::cout << "Cura: " << abilities.getSymbol("Cura").stringValue << std::endl;
+    std::cout << "Daño Mágico: " << abilities.getSymbol("Daño Mágico").intValue << std::endl;
 
