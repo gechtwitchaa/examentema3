@@ -19,4 +19,10 @@ public:
             std::cout << "No se encontró el símbolo '" << symbol << "'." << std::endl;
         }
     }
+        // Función para verificar si un símbolo existe
+        bool symbolExists(const std::string& symbol) const {
+            return symbolTable.find(symbol) != symbolTable.end();
+        }
+    };
 
+   
