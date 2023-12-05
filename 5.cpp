@@ -31,3 +31,24 @@ public:
         }
     }
 };
+
+int main() {
+    Environment env;
+
+    Variant varInt(10);
+    Variant varStr("Hola, Mundo!");
+
+    env.addSymbol("numero", varInt);
+    env.addSymbol("saludo", varStr);
+
+    Variant valueNum = env.getSymbolValue("numero");
+    std::cout << "El valor del número es: " << valueNum.intValue << std::endl;
+
+    Variant valueStr = env.getSymbolValue("saludo");
+    std::cout << "El saludo es: " << valueStr.stringValue << std::endl;
+
+    Variant valueInvalid = env.getSymbolValue("inexistente");
+    std::cout << "El valor del símbolo inexistente es: " << valueInvalid.stringValue << std::endl;
+
+    return 0;
+}
