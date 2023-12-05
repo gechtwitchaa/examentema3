@@ -44,4 +44,8 @@ int main() {
     std::cout << "Ataque Furtivo: " << abilities.getSymbol("Ataque Furtivo").stringValue << std::endl;
     std::cout << "Cura: " << abilities.getSymbol("Cura").stringValue << std::endl;
     std::cout << "Daño Mágico: " << abilities.getSymbol("Daño Mágico").intValue << std::endl;
+    
+    std::cout << "Robar: " << abilities.getSymbol("Robar").stringValue << std::endl;
 
+    return 0;
+}
