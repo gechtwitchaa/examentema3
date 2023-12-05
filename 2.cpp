@@ -39,7 +39,7 @@ int main() {
     env.insert("x", 10);
     env.insert("y", 20);
     env.insert("x", 30);
-    
+
     std::cout << "El valor de 'x' es: " << env.getSymbolValue("x") << std::endl;
     std::cout << "El valor de 'y' es: " << env.getSymbolValue("y") << std::endl;
 
