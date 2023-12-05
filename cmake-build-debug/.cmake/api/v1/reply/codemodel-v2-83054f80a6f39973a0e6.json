@@ -21,7 +21,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -42,7 +43,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -88,6 +90,13 @@
 					"id" : "7::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-7-Debug-0aa285065f2495b91211.json",
 					"name" : "7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-8-Debug-d493f4a2e48c89843253.json",
+					"name" : "8",
 					"projectIndex" : 0
 				},
 				{

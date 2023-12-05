@@ -46,7 +46,7 @@ int main() {
 
     Variant ability1 = abilities.getSymbol("Ataque Furtivo");
     Variant ability2 = abilities.getSymbol("Cura");
-    
+
     std::cout << "Habilidad 1: ";
     if (ability1.type == Type::STRING) {
         std::cout << ability1.stringValue << std::endl;
