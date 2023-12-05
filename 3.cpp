@@ -12,3 +12,13 @@ public:
         symbolTable[symbol] = value;
     }
 
+    std::unique_ptr<int> lookup(const std::string& symbol) {
+        auto it = symbolTable.find(symbol);
+        if (it != symbolTable.end()) {
+            return std::make_unique<int>(it->second);
+        } else {
+            return nullptr;
+        }
+    }
+};
+
