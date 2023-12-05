@@ -20,4 +20,17 @@ public:
             return 0;
         }
     }
+    
+    bool insert(const std::string& symbol, int value) {
+        auto it = symbolTable.find(symbol);
+        if (it == symbolTable.end()) {
+            symbolTable[symbol] = value;
+            return true;
+        } else {
+            std::cerr << "Error: El símbolo '" << symbol << "' ya está definido en el entorno." << std::endl;
+            return false;
+        }
+    }
+
+};
 
