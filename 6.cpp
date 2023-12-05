@@ -29,4 +29,5 @@ int main() {
 
     Environment env;
 
- 
+    env.removeSymbol("miSimbolo");
+
