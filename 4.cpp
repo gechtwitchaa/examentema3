@@ -40,5 +40,13 @@ int main() {
         if (valueX) {
             std::cout << "El valor de 'x' es: " << *valueX << std::endl;
         }
+        
+        env.addSymbol("x", 30);
+    } catch (const std::invalid_argument& e) {
+        std::cout << "Error: " << e.what() << std::endl;
+    } catch (const std::out_of_range& e) {
+        std::cout << "Error: " << e.what() << std::endl;
+    }
 
-      
+    return 0;
+}
