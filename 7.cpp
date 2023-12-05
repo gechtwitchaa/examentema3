@@ -36,3 +36,11 @@ public:
         return Variant("No existe esa habilidad");
     }
 
+};
+
+int main() {
+    Environment abilities;
+    
+    abilities.addSymbol("Ataque Furtivo", Variant("Realiza un ataque sigiloso"));
+    abilities.addSymbol("Cura", Variant("cura puntos de vida"));
+
