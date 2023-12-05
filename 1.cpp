@@ -11,4 +11,12 @@ public:
         symbolTable[symbol] = value;
     }
 
- 
+    int getSymbolValue(const std::string& symbol) {
+        if (symbolTable.find(symbol) != symbolTable.end()) {
+            return symbolTable[symbol];
+        } else {
+            
+
+
+
+
