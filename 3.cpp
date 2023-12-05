@@ -22,3 +22,10 @@ public:
     }
 };
 
+int main() {
+    Environment env;
+
+    env.addSymbol("x", 10);
+    env.addSymbol("y", 20);
+
+  
