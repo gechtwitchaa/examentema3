@@ -34,3 +34,10 @@ public:
     }
 };
 
+int main() {
+    Environment abilities;
+    
+    abilities.addSymbol("Ataque Furtivo", Variant("Realiza un ataque sigiloso"));
+    abilities.addSymbol("Cura", Variant("Restaura puntos de vida"));
+    abilities.addSymbol("Daño Mágico", Variant(30));
+
